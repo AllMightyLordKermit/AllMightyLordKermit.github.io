@@ -1,0 +1,508 @@
+<!DOCUMENT html>
+<title>Mushroom gaming</title>
+<style>
+body {background-color: #3A2011;}
+#divB {
+ border: 4px solid #555555;
+ background-image: linear-gradient(to right, #666666 , #AAAAAA);
+ width: 100%;
+ height: 300px;
+}
+#divL {
+ border: 4px solid #1100AA;
+ background-image: linear-gradient(to right, #1122AA , #333355);
+ width: 100%;
+ height: 300px;
+}
+#divU {
+ border: 4px solid #550055;
+ background-image: linear-gradient(to right, #770077 , #000000);
+ width: 100%;
+ height: 300px;
+}
+#divR {
+ border: 4px solid #CCCC00;
+ background-image: linear-gradient(to right, #FFFF22 , #FFFF55 , #FFFFFF);
+ width:100%;
+ height: 300px;
+}
+#divV {
+ border: 4px solid #FFFFFF;
+ background-image: linear-gradient(to right, #FF0000 , #FF7F00 , #FFFF00 , #00FF00 ,
+ #0000FF , #4B0082 , #9400D3);
+ width: 100%;
+ height: 300px;
+}
+#divSP {
+ border: 4px solid #FFFFFF;
+ background-image: linear-gradient(to right, #666666 , #AAAAAA , #1122AA , #333355 ,
+ #770077 , #000000 , #FFFF22 , #FFFF55 , #FFFFFF , #FF0000 , #FF7F00 , #FFFF00 ,
+ #00FF00 , #0000FF , #4B0082 , #9400D3);
+ width: 100%;
+ height: 300px;
+}
+#ShiitakeT {
+ position: relative;
+ left: 5px;
+ color: #3A2011;
+}
+#ShiitakeD {
+ border: 5px solid #312011;
+ width: 200px;
+ background-color: #FFE39F;
+}
+#InkCapT {
+ position: relative;
+ left: 5px;
+ color: #000033;
+}
+#InkCapD {
+ position: absolute;
+ top: 92px;
+ left: 250px;
+ border: 5px solid #000033;
+ width: 200px;
+ background-color: #FFC2B7;
+}
+#JackT {
+ position: relative;
+ left: 5px;
+ color: #FFFF00;
+}
+#JackD {
+ position: absolute;
+ top: 92px;
+ left: 500px;
+ border: 5px solid #FFFF00;
+ width: 200px;
+ background-color: #FF7700;
+}
+#GlittergillT {
+ position: relative;
+ left: 5px;
+ color: #CCCCFF;
+}
+#GlittergillD {
+ position: absolute;
+ top: 92px;
+ left: 750px;
+ border: 5px solid #DDDDFF;
+ width: 200px;
+ background-color: #FFF4AF;
+}
+#ShimmerT {
+ position: relative;
+ left: 5px;
+ color: #FFAAFF;
+}
+#ShimmerD { 
+ position: absolute;
+ top: 92px;
+ left: 1000px;
+ border: 5px solid #FFDDFF;
+ width: 200px;
+ background-color: #FFFFFF;
+}
+#AquaT {
+ position: relative;
+ left: 5px;
+ color: #DDDDFF;
+}
+#AquaD {
+ position: relative;
+ border: 5px solid #DDDDFF;
+ width: 200px;
+ background-color: #0088FF;
+}
+#NeurotoxinT {
+ position: relative;
+ left: 5px;
+ color: #0000CC;
+}
+#NeurotoxinD {
+ position: absolute;
+ top: 400px;
+ left: 250px;
+ border: 5px solid #0000CC;
+ width: 200px;
+ background-color: #000055;
+}
+#ElectricT {
+ position: relative;
+ left: 5px;
+ color: #FFFFFF;
+}
+#ElectricD {
+ position: absolute;
+ top: 400px;
+ left: 500px;
+ border: 5px solid #FFFFFF;
+ width: 200px;
+ background-color: #DDDD00;
+}
+#ReflectiveT {
+ position: relative;
+ left: 5px;
+ color: #FFAAAA;
+}
+#ReflectiveD {
+ position: absolute;
+ top: 400px;
+ left: 750px;
+ border: 5px solid #FFAAAA;
+ width: 200px;
+ background-color: #000000;
+}
+#InkCap2T {
+ position: relative;
+ left: 5px;
+ color: #000033;
+}
+#InkCap2D {
+ position: absolute;
+ top: 400px;
+ left: 1000px;
+ border: 5px solid #000033;
+ width: 200px;
+ background-color: #FFC2B7;
+}
+#DeathCapT {
+ position: relative;
+ left: 5px;
+ color: #FFFFFF;
+}
+#DeathCapD {
+ position: relative;
+ border: 5px solid #FFFFFF;
+ width: 200px;
+ background-color: #000000;
+}
+#EclipseT {
+ position: relative;
+ left: 5px;
+ color: #FFFFFF;
+}
+#EclipseD {
+ position: absolute;
+ top: 708px;
+ left: 250px;
+ border: 5px solid #000000; 
+ width: 200px;
+ background-color: #000000;
+}
+#MonochromaticT {
+ position: relative;
+ left: 5px;
+ color: #FFFFFF;
+}
+#MonochromaticD {
+ position: absolute;
+ top: 708px;
+ left: 500px;
+ border: 5px solid #FFFFFF; 
+ width: 200px;
+ background-color: #555555;
+}
+#Neurotoxin2T {
+ position: relative;
+ left: 5px;
+ color: #0000CC;
+}
+#Neurotoxin2D {
+ position: absolute;
+ top: 708px;
+ left: 750px;
+ border: 5px solid #0000CC;
+ width: 200px;
+ background-color: #000055;
+}
+#Jack2T {
+ position: relative;
+ left: 5px;
+ color: #FFFF00;
+}
+#Jack2D {
+ position: absolute;
+ top: 708px;
+ left: 1000px;
+ border: 5px solid #FFFF00;
+ width: 200px;
+ background-color: #FF7700;
+}
+#LanternT {
+ position: relative;
+ left: 5px;
+ color: #FFFF00;
+}
+#LanternD {
+ position: relative;
+ border: 5px solid #BBBB00;
+ width: 200px;
+ background-color: #000000;
+}
+#PrismaticT {
+ position: relative;
+ left: 5px;
+ color: #FF0000;
+}
+#PrismaticD {
+ position: absolute;
+ top: 1016px;
+ left: 250px;
+ border: 5px solid #FF0000;
+ width: 200px;
+ background-color: #0000FF;
+}
+#Eclipse2T {
+ position: relative;
+ left: 5px;
+ color: #FFFFFF;
+}
+#Eclipse2D {
+ position: absolute;
+ top: 1016px;
+ left: 500px;
+ border: 5px solid #000000; 
+ width: 200px;
+ background-color: #000000;
+}
+#Glittergill2T {
+ position: relative;
+ left: 5px;
+ color: #CCCCFF;
+}
+#Glittergill2D {
+ position: absolute;
+ top: 1016px;
+ left: 750px;
+ border: 5px solid #DDDDFF;
+ width: 200px;
+ background-color: #FFF4AF;
+}
+#Electric2T {
+ position: relative;
+ left: 5px;
+ color: #FFFFFF;
+}
+#Electric2D {
+ position: absolute;
+ top: 1016px;
+ left: 1000px;
+ border: 5px solid #FFFFFF;
+ width: 200px;
+ background-color: #DDDD00;
+}
+#Shimmer2T {
+ position: relative;
+ left: 5px;
+ color: #FFAAFF;
+}
+#Shimmer2D { 
+ position: relative;
+ border: 5px solid #FFDDFF;
+ width: 200px;
+ background-color: #FFFFFF;
+}
+#Monochromatic2T {
+ position: relative;
+ left: 5px;
+ color: #FFFFFF;
+}
+#Monochromatic2D {
+ position: absolute;
+ top: 1324px;
+ left: 250px;
+ border: 5px solid #FFFFFF; 
+ width: 200px;
+ background-color: #555555;
+}
+#Prismatic2T {
+ position: relative;
+ left: 5px;
+ color: #FF0000;
+}
+#Prismatic2D {
+ position: absolute;
+ top: 1324px;
+ left: 500px;
+ border: 5px solid #FF0000;
+ width: 200px;
+ background-color: #0000FF;
+}
+#Reflective2T {
+ position: relative;
+ left: 5px;
+ color: #FFAAAA;
+}
+#Reflective2D {
+ position: absolute;
+ top: 1324px;
+ left: 750px;
+ border: 5px solid #FFAAAA;
+ width: 200px;
+ background-color: #000000;
+}
+#GlowT {
+ position: relative;
+ left: 5px;
+ color: #FFFFFF;
+}
+#GlowD {
+ position: relative;
+ border: 5px solid #FFFFFF;
+ width: 200px;
+ background-color: #88DDBB;
+}
+</style>
+<html>
+ <body>
+  <div id="divB">
+   <h1 style="color:#AAAAAA">BASIC MYCELLIUM</h1>
+   <div id="ShiitakeD"> 
+    <p id="ShiitakeT">SHIITAKE</p><br>
+    <p id="ShiitakeT">Any + Well water</p><br>
+    <p id="ShiitakeT">Pure Basic</p>
+   </div>
+   <div id="InkCapD"> 
+    <p id="InkCapT">INK CAP</p><br>
+    <p id="InkCapT">Any + Sea Water</p><br>
+    <p id="InkCapT">Basic + Lichenous</p>
+   </div>
+   <div id="JackD"> 
+    <p id="JackT">JACK O' LANTERN</p><br>
+    <p id="JackT">Any + Void Water</p><br>
+    <p id="JackT">Basic + Umbral</p>
+   </div>
+   <div id="GlittergillD"> 
+    <p id="GlittergillT">GLITTERGILL</p><br>
+    <p id="GlittergillT">Any + Sunlight</p><br>
+    <p id="GlittergillT">Basic + Radiant</p>
+   </div>
+   <div id="ShimmerD"> 
+    <p id="ShimmerT">SHIMMER</p><br>
+    <p id="ShimmerT">Any + Prismatic Water</p><br>
+    <p id="ShimmerT">Basic + Vibrant</p>
+   </div>
+  </div>
+  <div id="divL">
+   <h1 style="color:#2222FF">LICHENOUS MYCELLIUM</h1>
+   <div id="AquaD"> 
+    <p id="AquaT">AQUA</p><br>
+    <p id="AquaT">3 Ink Caps + Sea Water</p><br>
+    <p id="AquaT">Pure Lichenous</p>
+   </div>
+   <div id="NeurotoxinD"> 
+    <p id="NeurotoxinT">NEUROTOXIN</p><br>
+    <p id="NeurotoxinT">2 Ink Caps(Water 1), Jack + Void water</p><br>
+    <p id="NeurotoxinT">Lichenous + Umbral</p>
+   </div>
+   <div id="ElectricD"> 
+    <p id="ElectricT">ELECTRIC</p><br>
+    <p id="ElectricT">2 Ink Caps(Water 1) + Glittergill + Sunlight</p><br>
+    <p id="ElectricT">Lichenous + Radiant</p>
+   </div>
+   <div id="ReflectiveD"> 
+    <p id="ReflectiveT">REFLECTIVE</p><br>
+    <p id="ReflectiveT">3 Ink Caps + Prismatic Water</p><br>
+    <p id="ReflectiveT">Lichenous + Vibrant</p>
+   </div>
+   <div id="InkCap2D"> 
+    <p id="InkCap2T">INK CAP</p><br>
+    <p id="InkCap2T">Any + Sea Water</p><br>
+    <p id="InkCap2T">Lichenous + Basic</p>
+   </div>
+  </div>
+  <div id="divU">
+   <h1 style="color: #330033">UMBRAL MYCELLIUM</h1>
+   <div id="DeathCapD"> 
+    <p id="DeathCapT">DEATH CAP</p><br>
+    <p id="DeathCapT">3 Jacks + Void water</p><br>
+    <p id="DeathCapT">Pure Umbral</p>
+   </div>
+   <div id="EclipseD"> 
+    <p id="EclipseT">ECLIPSE</p><br>
+    <p id="EclipseT">Lantern(water) + Jack + Sunlight</p><br>
+    <p id="EclipseT">Umbral + Radiant</p>
+   </div>
+   <div id="MonochromaticD"> 
+    <p id="MonochromaticT">MONOCHROMATIC</p><br>
+    <p id="MonochromaticT">2 Shimmer(Water 1) + Jack + Void water</p><br>
+    <p id="MonochromaticT">Umbral + Vibrant</p>
+   </div>
+   <div id="Neurotoxin2D"> 
+    <p id="Neurotoxin2T">NEUROTOXIN</p><br>
+    <p id="Neurotoxin2T">2 Ink Caps(Water 1), Jack + Void water</p><br>
+    <p id="Neurotoxin2T">Lichenous + Umbral</p>
+   </div>
+   <div id="Jack2D"> 
+    <p id="Jack2T">JACK O' LANTERN</p><br>
+    <p id="Jack2T">Any + Void Water</p><br>
+    <p id="Jack2T">Basic + Umbral</p>
+   </div>
+   </div>
+  </div>
+  <div id="divR">
+   <h1 style="color: #CCCC00">RADIANT MYCELLIUM</h1>
+   <div id="LanternD"> 
+    <p id="LanternT">LANTERN</p><br>
+    <p id="LanternT">3 Glittergills + Sunlight</p><br>
+    <p id="LanternT">Pure Radiant</p>
+   </div>
+   <div id="PrismaticD"> 
+    <p id="PrismaticT">PRISMATIC</p><br>
+    <p id="PrismaticT">2 Glittergills(Water) + Shimmer + Prismatic</p><br>
+    <p id="PrismaticT">Radiant + Vibrant</p>
+   </div>
+   <div id="Glittergill2D"> 
+    <p id="Glittergill2T">GLITTERGILL</p><br>
+    <p id="Glittergill2T">Any + Sunlight</p><br>
+    <p id="Glittergill2T">Basic + Radiant</p>
+   </div>
+   <div id="Electric2D"> 
+    <p id="Electric2T">ELECTRIC</p><br>
+    <p id="Electric2T">2 Ink Caps(Water 1) + Glittergill + Sunlight</p><br>
+    <p id="Electric2T">Lichenous + Radiant</p>
+   </div>
+   <div id="Eclipse2D"> 
+    <p id="Eclipse2T">ECLIPSE</p><br>
+    <p id="Eclipse2T">Lantern(water) + Jack + Sunlight</p><br>
+    <p id="Eclipse2T">Umbral + Radiant</p>
+   </div>
+  </div>
+  <div id="divV">
+   <h1 style="color: #FFFFFF">VIBRANT MYCELLIUM</h1>
+   <div id="Shimmer2D"> 
+    <p id="Shimmer2T">SHIMMER</p><br>
+    <p id="Shimmer2T">Any + Prismatic Water</p><br>
+    <p id="Shimmer2T">Basic + Vibrant</p>
+   </div>
+   <div id="Monochromatic2D"> 
+    <p id="Monochromatic2T">MONOCHROMATIC</p><br>
+    <p id="Monochromatic2T">2 Shimmer(Water 1) + Jack + Void water</p><br>
+    <p id="Monochromatic2T">Umbral + Vibrant</p>
+   </div>
+   <div id="Prismatic2D"> 
+    <p id="Prismatic2T">PRISMATIC</p><br>
+    <p id="Prismatic2T">2 Glittergills(Water) + Shimmer + Prismatic</p><br>
+    <p id="Prismatic2T">Radiant + Vibrant</p>
+   </div>
+   <div id="Reflective2D"> 
+    <p id="Reflective2T">REFLECTIVE</p><br>
+    <p id="Reflective2T">3 Ink Caps + Prismatic Water</p><br>
+    <p id="Reflective2T">Lichenous + Vibrant</p>
+   </div>
+  </div>
+  <div id="divSP">
+   <h1 style="color: #FFFFFF">SPECIAL MUSHROOMS</h1>
+   <div id="GlowD"> 
+    <p id="GlowT">GLOW</p><br>
+    <p id="GlowT">3 Shimmers + Prismatic Water</p><br>
+    <p id="GlowT">Low amount of all</p>
+   </div>
+  </div>
+  <h1>Source for preety much all the text:<h1>
+  <h2>cat ඞ#2650's mushroom mutation list</h2>
+  <h6>Don't know if I need permission but at this point it's too late</h6>
+  <h6>And I'm too dum too know</h6>
+ </body>
+</hmtl>
